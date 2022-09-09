@@ -1,6 +1,8 @@
 #include "monty.h"
 #include "lists.h"
 
+data_t data = DATA_INIT;
+
 /**
  * monty - helper function for main function
  * @args: pointer to struct of arguments from main
@@ -11,7 +13,6 @@
  */
 void monty(args_t *args)
 {
-	data_t data = DATA_INIT;
 	size_t len = 0;
 	int get = 0;
 	void (*code_func)(stack_t **, unsigned int);
