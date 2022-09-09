@@ -86,7 +86,6 @@ size_t print_dlistint(const dlistint_t *h)
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	dlistint_t *temp = *head;
-	unsigned int i = 0;
 
 	if (!index)
 	{
@@ -97,3 +96,4 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		free(temp);
 		return (1);
 	}
+}
