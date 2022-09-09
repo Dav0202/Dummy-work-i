@@ -75,6 +75,8 @@ typedef stack_t dlistint_t;
 extern data_t data;
 
 #define DATA_INIT {NULL, NULL, NULL, NULL, 0}
+#define _POSIX_C_SOURCE 200809L
+#define _GNU_SOURCE
 
 #define USAGE "USAGE: monty file\n"
 #define FILE_ERROR "Error: Can't open file %s\n"
@@ -108,3 +110,5 @@ void nop_handler(stack_t **stack, unsigned int line_number);
 void sub_handler(stack_t **stack, unsigned int line_number);
 void div_handler(stack_t **stack, unsigned int line_number);
 void mul_handler(stack_t **stack, unsigned int line_number);
+
+#endif
