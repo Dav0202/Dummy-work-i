@@ -48,9 +48,11 @@ void rotr_handler(stack_t **stack, unsigned int line_number)
  */
 void stack_handler(stack_t **stack, unsigned int line_number)
 {
+	data_t data = DATA_INIT;
+
+	data->qflag = 0;
 	(void)stack;
 	(void)line_number;
-	data_t->qflag = 0;
 }
 
 
@@ -61,7 +63,9 @@ void stack_handler(stack_t **stack, unsigned int line_number)
  */
 void queue_handler(stack_t **stack, unsigned int line_number)
 {
+	data_t data = DATA_INIT;
+
+	data->qflag = 1;
 	(void)stack;
 	(void)line_number;
-	data_t->qflag = 1;
 }
