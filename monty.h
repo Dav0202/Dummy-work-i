@@ -73,7 +73,6 @@ typedef struct data_s
 
 typedef stack_t dlistint_t;
 
-extern data_t data;
 
 #define DATA_INIT {NULL, NULL, NULL, NULL, 0}
 
