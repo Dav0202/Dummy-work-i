@@ -98,3 +98,15 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	}
 	return 0;
 }
+
+dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
+{
+	dlistint_t *current_node = head;
+
+	while (current_node && index)
+	{
+		index--;
+		current_node = current_node->next;
+	}
+	return (current_node);
+}
