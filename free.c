@@ -7,6 +7,8 @@
  */
 void free_all(int all)
 {
+	data_t data = DATA_INIT;
+
 	if (data.line)
 	{
 		free(data.line);
