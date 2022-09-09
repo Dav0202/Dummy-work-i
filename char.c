@@ -11,14 +11,14 @@ void pchar_handler(stack_t **stack, unsigned int line_number)
 
 	if (!node)
 	{
-		vprintf(STDERR_FILENO, PCHAR_FAIL, line_number);
+		dprintf(STDERR_FILENO, PCHAR_FAIL, line_number);
 		free_all(1);
 		exit(EXIT_FAILURE);
 	}
 
 	if (node->n < 0 || node->n > 127)
 	{
-		vprintf(STDERR_FILENO, PCHAR_RANGE, line_number);
+		dprintf(STDERR_FILENO, PCHAR_RANGE, line_number);
 		free_all(1);
 		exit(EXIT_FAILURE);
 	}
