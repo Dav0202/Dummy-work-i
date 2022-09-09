@@ -48,7 +48,7 @@ void rotr_handler(stack_t **stack, unsigned int line_number)
  */
 void stack_handler(stack_t **stack, unsigned int line_number)
 {
-	data_t data = DATA_INIT;
+	data_t *data = DATA_INIT;
 
 	(void)stack;
 	(void)line_number;
@@ -63,7 +63,7 @@ void stack_handler(stack_t **stack, unsigned int line_number)
  */
 void queue_handler(stack_t **stack, unsigned int line_number)
 {
-	data_t data = DATA_INIT;
+	data_t *data = DATA_INIT;
 
 	(void)stack;
 	(void)line_number;
