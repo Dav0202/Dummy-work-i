@@ -62,7 +62,6 @@ void monty(args_t *args)
 int main(int argc, char *argv[])
 {
 	args_t args;
-	data_t data = DATA_INIT;
 
 	args.av = argv[1];
 	args.ac = argc;
