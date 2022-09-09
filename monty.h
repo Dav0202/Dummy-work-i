@@ -93,6 +93,8 @@ extern data_t data;
 #define PCHAR_FAIL "L%u: can't pchar, stack empty\n"
 #define PCHAR_RANGE "L%u: can't pchar, value out of range\n"
 
+char **strtow(char *str);
+
 void monty(args_t *args);
 
 void (*get_func(char **parsed))(stack_t **, unsigned int);
